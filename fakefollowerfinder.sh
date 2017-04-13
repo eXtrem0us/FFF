@@ -3,7 +3,7 @@
 # It is assumed that you have installed 't', the Twitter API CLI tool.
 # If you haven't, please follow the instructions in page https://github.com/sferik/t
 # It is recommended to install it by issuing the command: gem install t
-# For this purpose, in debian based systems you need to install:
+# For this purpose, on Debian based systems you need to install:
 # - rubygems
 # - ruby-dev
 # - build-essential
@@ -201,9 +201,9 @@ Cleanup
 
  ######## 
 ## ToDo ##
-#        ###################################################################################################
-# Make this script accept parameters for each function and method                                          #
-# Embed an auto-install script, which is compatible with the major linux distros: Debian, CentOS, Arch,... #
-#                                                                                                          #
-# Written by @eXtrem0us                                                                                    #
-############################################################################################################
+#        ###############################################################################################
+# Make this script accept parameters for each function and method                                      #
+# Embed an auto-installation script, which could on the major Linux distros: Debian, CentOS, Arch,...  #
+#                                                                                                      #
+# Written by @eXtrem0us                                                                                #
+########################################################################################################
