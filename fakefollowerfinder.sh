@@ -10,6 +10,8 @@
 # - rubygems
 # - ruby-dev
 # - build-essential
+#
+# Also, these packages are needed for script functionality:
 # - bsdmainutils
 # - dateutils
 
@@ -17,13 +19,13 @@
 #>>Metrics<<
 #<<<<<<<<<<<
 
-# Uncomment below line, if you think who has exceeded following below number of people, is fake:
+# Uncomment below line, if you think who has exceeded following more than below number of accounts, is fake:
 MaximumFollowings=3000
 
 # Uncomment below line, if you think who has never tweeted (TweetCount=0) or has just few tweets, is fake:
 TweetCount=0
 
-# Uncomment below line, if you think who has not any tweets during some days, is fake:
+# Uncomment below line, if you think who has not any tweets after some days, is fake:
 InactiveDays=200
 
 # There are users, who are protected and you don't follow them, but they do. Set below variable
@@ -184,9 +186,9 @@ Cleanup
 
  ######## 
 ## ToDo ##
-#        ###############################################################################################
-# Make this script accept parameters for each function and method                                      #
-# Embed an auto-installation script, which could on the major Linux distros: Debian, CentOS, Arch,...  #
-#                                                                                                      #
-# Written by @eXtrem0us                                                                                #
-########################################################################################################
+#        ###################################################################################################
+# Make this script accept parameters for each function and method                                          #
+# Embed an auto-installation script, which could run on the major Linux distros: Debian, CentOS, Arch,...  #
+#                                                                                                          #
+# Written by @eXtrem0us                                                                                    #
+############################################################################################################
