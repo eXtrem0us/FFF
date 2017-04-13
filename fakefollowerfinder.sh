@@ -3,7 +3,11 @@
 # It is assumed that you have installed 't', the Twitter API CLI tool.
 # If you haven't, please follow the instructions in page https://github.com/sferik/t
 # It is recommended to install it by issuing the command: gem install t
-
+# For this purpose, in debian based systems you need to install:
+# - rubygems
+# - ruby-dev
+# - build-essential
+# - bsdmainutils
 
 
 #>>>>>>>>>>>
@@ -13,16 +17,19 @@
 # Uncomment below line, if you think who has exceeded following below number of people, is fake:
 MaximumFollowings=3000
 
-# Uncomment below line, if you think who has never followed any people (MinimumFollowings=0) or just has followed few people, is fake:
+# Uncomment below line, if you think who has never followed any people (MinimumFollowings=0) or
+# just has followed few people, is fake:
 MinimumFollowings=0
 
-# Uncomment below line, if you think who has never tweeted (TweetCount=0) or has just few tweets, is fake:
+# Uncomment below line, if you think who has never tweeted (TweetCount=0) or has just few tweets,
+# is fake:
 TweetCount=0
 
 # Uncomment below line, if you think who has not any tweets during some days, is fake:
 InactiveDays=200
 
-# There are users, who are protected and you don't follow them, but they do. Set below variable to "true" if you don't like them.
+# There are users, who are protected and you don't follow them, but they do. Set below variable
+# to "true" if you don't like them:
 NoFozool="true"
 
 #>>>>>>>>>>
@@ -30,8 +37,10 @@ NoFozool="true"
 #<<<<<<<<<<
 
 # Please choose the method, how FFF would deal with the fake followers:
-# 1: Block-Unblock:	Blocks and then Unblocks the list of fake followers. The user stops following you without noticing. (Safe Method)
-# 2: Just Block:	Blocks the User. The user would not have any interactions or conversations with you. (Unsafe Method)
+# 1: Block-Unblock:	Blocks and then Unblocks the list of fake followers. The user stops following
+#			you without noticing. (Safe Method)
+# 2: Just Block:	Blocks the User. The user would not have any interactions or conversations with
+#			you. (Unsafe Method)
 Method=1
 
 
@@ -39,8 +48,9 @@ Method=1
 #>>Do Stuffs!<<
 #<<<<<<<<<<<<<<
 
-# As you may know, Twitter API restricts normal user in the way they use it. Users should issue a limited number of queries to twitter per
-# minutes. So, here is a variable which sets the delay (by seconds) between each query that be issued to twitter.
+# As you may know, Twitter API restricts normal user in the way they use it. Users should issue a limited
+# number of queries to twitter per minutes. So, here is a variable which sets the delay (by seconds) between
+# each query that be issued to twitter.
 SmoothDelay=0
 
 function CheckRequirements
