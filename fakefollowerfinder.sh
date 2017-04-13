@@ -2,13 +2,16 @@
 
 # It is assumed that you have installed 't', the Twitter API CLI tool.
 # If you haven't, please follow the instructions in page https://github.com/sferik/t
-# It is recommended to install it by issuing the command: gem install t
+# It is recommended to install it by issuing the command:
+#
+#   gem install t
+#
 # For this purpose, on Debian based systems you need to install:
 # - rubygems
 # - ruby-dev
 # - build-essential
 # - bsdmainutils
-
+# - dateutils
 
 #>>>>>>>>>>>
 #>>Metrics<<
@@ -17,12 +20,7 @@
 # Uncomment below line, if you think who has exceeded following below number of people, is fake:
 MaximumFollowings=3000
 
-# Uncomment below line, if you think who has never followed any people (MinimumFollowings=0) or
-# just has followed few people, is fake:
-MinimumFollowings=0
-
-# Uncomment below line, if you think who has never tweeted (TweetCount=0) or has just few tweets,
-# is fake:
+# Uncomment below line, if you think who has never tweeted (TweetCount=0) or has just few tweets, is fake:
 TweetCount=0
 
 # Uncomment below line, if you think who has not any tweets during some days, is fake:
@@ -92,20 +90,6 @@ function SpecifyExceeded
 	[ "$temp" -ge "$MaximumFollowings" ] && echo "$groupy" | cut -d, -f9 >> Exceeded.lst
     done < groupies.csv
     echo "Found $(wc -l < Exceeded.lst) Entries!"
-}
-
-function SpecifyUnderExpected
-{
-    [ ! -v MinimumFollowings ] && return 0
-    [ -f UnderExpected.lst ] && echo '' > UnderExpected.lst
-    echo "Specifying the followers, who are following few accounts"
-    touch UnderExpected.lst
-    while read -r groupy
-    do
-	temp=$(echo "$groupy"|cut -d, -f7)
-	[ "$temp" -le "$MinimumFollowings" ] && echo "$groupy" | cut -d, -f9 >> UnderExpected.lst
-    done < groupies.csv
-    echo "Found $(wc -l < UnderExpected.lst) Entries!"
 }
 
 function SpecifyNoInhabitant
@@ -191,7 +175,6 @@ function Cleanup
 CheckRequirements
 GatherGroupies
 SpecifyExceeded
-SpecifyUnderExpected
 SpecifyNoInhabitant
 SpecifyInactives
 SpecifyFozools
