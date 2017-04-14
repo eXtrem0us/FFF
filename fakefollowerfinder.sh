@@ -70,7 +70,7 @@ function CheckRequirements
 function GatherGroupies
 {
     #Gathering a list of followers whom you don't follow:
-    [ -f groupies.csv ] && echo '' > groupies.csv
+    echo -n > groupies.csv
     echo "Gathering information from the followers whom you don't follow. Please be patient..."
     for groupy in $(t groupies)
     do
@@ -84,7 +84,7 @@ function GatherGroupies
 function SpecifyExceeded
 {
     [ ! -v MaximumFollowings ] && return 0
-    [ -f Exceeded.lst ] && echo '' > Exceeded.lst
+    echo -n > Exceeded.lst
     echo "Specifying the followers, who are following many accounts"
     while read -r groupy
     do
@@ -97,7 +97,7 @@ function SpecifyExceeded
 function SpecifyNoInhabitant
 {
     [ ! -v TweetCount ] && return 0
-    [ -f NoInhabitant.lst ] && echo '' > NoInhabitant.lst
+    echo -n > NoInhabitant.lst
     echo "Specifying the followers, who have few or no any tweets"
     while read -r groupy
     do
@@ -110,7 +110,7 @@ function SpecifyNoInhabitant
 function SpecifyInactives
 {
     [ ! -v InactiveDays ] && return 0
-    [ -f Inactives.lst ] && echo '' > Inactives.lst
+    echo -n > Inactives.lst
     echo "Specifying the users, who haven't been active in the last $InactiveDays days"
     while read -r groupy
     do
@@ -127,7 +127,7 @@ function SpecifyInactives
 function SpecifyFozools
 {
     [ "$NoFozool" != "true" ] && return 0
-    [ -f Fozools.lst ] && echo '' > Fozools.lst
+    echo -n > Fozools.lst
     echo "Specifying the users, whom are following you, but they're protected and you don't follow them"
     while read -r groupy
     do
