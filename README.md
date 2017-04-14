@@ -14,7 +14,7 @@ It choose the followers from <b>GROUPIES:`the accounts which follows you, but yo
 
 You can simply choose one or more class of Facke Followers and choose a method to deal with them.
 The methods are:
-1. Block-Unblock: The user can keep communicating with you, like they have never started following you.
-2. Block: Simply Blocks those accounts.
+1. `Block-Unblock`: The user can keep communicating with you, like they have never started following you.
+2. `Block`: Simply Blocks those accounts.
 
 Happy Blocking! 😉
