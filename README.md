@@ -17,4 +17,19 @@ The methods are:
 1. `Block-Unblock`: The user can keep communicating with you, like they have never started following you.
 2. `Block`: Simply Blocks those accounts.
 
+This script is based on [t, the Twitter CLI][t] <br/>
+Please read the script content before runniung.<br/>
+[t]: https://github.com/sferik/t
+
+## Requirements:
+You should have `rubygems` and `ruby-dev` and `build-essential` packages installed on your system in order that the `gem` command works correctly.<br/> You should then install <b>t</b> by running:<br/>
+<code>gem install t</code>
+Also you need that the packages `dateutils` and `bsdmainutils` are installed, for script functionality.
+
+## To Do:
+As it is mentioned in the script:
+- Make this script accept parameters for each function and method
+- Embed an auto-installation script, which could run on the major Linux distros: Debian, CentOS, Arch,...
+
+
 Happy Blocking! 😉
