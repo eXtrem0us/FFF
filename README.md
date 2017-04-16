@@ -12,7 +12,7 @@ Find fake followers on Twitter and deal with 'em!
 This script helps you get rid of such accounts.<br/>
 It choose the followers from <b>GROUPIES:`the accounts which follows you, but you don't follow them back`</b>.
 
-You can simply choose one or more class of Facke Followers and choose a method to deal with them.
+You can simply choose one or more class of Fake Followers and choose a method to deal with them.
 The methods are:
 1. `Block-Unblock`: The user can keep communicating with you, like they have never started following you.
 2. `Block`: Simply Blocks those accounts.
