@@ -59,7 +59,7 @@ function CheckRequirements
     [ $(command -v dateutils.ddiff) ] && datediff=dateutils.ddiff
     [ $(command -v ddiff) ] && datediff=ddiff
     [ ! -v datediff ] && echo -e "Please install \e[96mdateutils\e[39m." && exit 1
-    [ ! -v column ] && echo -e "The command \e[96mcolumn\e[39m is not found. You may need to install \e[96mbsdmainutils\e[39m package." && exit 1
+    [ ! -z $(command -v column) ] && echo -e "The command \e[96mcolumn\e[39m is not found. You may need to install \e[96mbsdmainutils\e[39m package." && exit 1
 
     #Checks, if 't' is installed:
     [ -z $(command -v t) ] && echo -e "You have not installed \e[96mt\e[39m or proper \$PATH is not set to locate \e[96mt\e[39m" && exit 1
