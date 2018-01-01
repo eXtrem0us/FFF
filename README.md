@@ -1,5 +1,5 @@
 # Fake Follower Finder
-Find fake followers on Twitter and deal with 'em!
+Find fake followers on Twitter and get rid of 'em!
 
 ## Fake Follower Classes:
 - There are robots on twitter, which follow many of people, in order to gather data.
