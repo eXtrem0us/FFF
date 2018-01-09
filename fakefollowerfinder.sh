@@ -62,7 +62,7 @@ function CheckRequirements
     [ -z $(command -v column) ] && echo -e "The command \e[96mcolumn\e[39m is not found. You may need to install \e[96mbsdmainutils\e[39m package." && exit 1
 
     #Checks, if 't' is installed:
-    [ -z $(command -v t) ] && echo -e "You have not installed \e[96mt\e[39m or proper \$PATH is not set to locate \e[96mt\e[39m" && exit 1
+    [ -z $(command -v t) ] && echo -e "It seems you have not installed \e[96mt\e[39m. Use command \e[96mgem install t\e[39m." && exit 1
     
     #Checks, if 't' is configured. if you use -p parametter manually to locate the config file, comment below line:
     [ ! -f ~/.trc ] && echo -e "You have not configured \e[96mt\e[39m. Please run the command \e[96mt authorize\e[39m." && exit 1
@@ -151,7 +151,7 @@ function GetUserAcknowledge
 	    exit 1
     fi
     cat *.lst | sort | uniq | column
-    echo -e "\e[39m\nPress \e[41mEnter\e[49m to Start the process or \e[44mCtrl+C\e[49m to Abort..."
+    echo -e "\e[39m\nPress \e[41mEnter\e[49m to Proceed or \e[44mCtrl+C\e[49m to Abort..."
     read -p ''
 }
 
