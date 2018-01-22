@@ -142,10 +142,10 @@ function GetUserAcknowledge
 {
     if [ "$Method" -eq "1" ]
     then
-	echo -e "\n\e[44mHere is the list of twitter id which would be Block-Unblocked!\e[49m\e[93m\n"
+	echo -e "\n\e[44mHere is the list of Twitter IDs, which would be Block-Unblocked!\e[49m\e[93m\n"
 	elif [ "$Method" -eq "2" ]
 	then
-	    echo -e "\n\e[44mHere is the list of twitter id which would be Blocked!\e[49m\e[93m\n"
+	    echo -e "\n\e[44mHere is the list of Twitter IDs, which would be Blocked!\e[49m\e[93m\n"
 	else
 	    echo -e "\n\e[44mUNDEFINED METHOD!\e[49m\e[93m\n"
 	    exit 1
