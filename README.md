@@ -18,7 +18,7 @@ The methods are:
 2. `Block`: Simply Blocks those accounts.
 
 This script is based on t, the Twitter CLI: https://github.com/sferik/t <br/>
-Please read its documents from its github page in above link.<br/>
+Please read the documents from its github page in above link.<br/>
 
 ## Requirements:
 You should have `rubygems` and `ruby-dev` and `build-essential` packages installed on your system in order that the `gem` command works correctly.<br/> You should then install <b>t</b> by running:<br/>
