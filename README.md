@@ -10,7 +10,7 @@ Find fake followers on Twitter and get rid of 'em!
 ...
 ## What does this script do for you?
 This script helps you get rid of such accounts.<br/>
-It choose the followers from <b>GROUPIES:`the accounts which follows you, but you don't follow them back`</b>.
+It chooses the followers from <b>GROUPIES:`the accounts which follows you, but you don't follow them back`</b>.
 
 You can simply choose one or more class of Fake Followers and choose a method to deal with them.
 The methods are:
@@ -18,7 +18,7 @@ The methods are:
 2. `Block`: Simply Blocks those accounts.
 
 This script is based on t, the Twitter CLI: https://github.com/sferik/t <br/>
-Please read the script content before runniung.<br/>
+Please read its documents from its github page in above link.<br/>
 
 ## Requirements:
 You should have `rubygems` and `ruby-dev` and `build-essential` packages installed on your system in order that the `gem` command works correctly.<br/> You should then install <b>t</b> by running:<br/>
